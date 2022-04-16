@@ -1,5 +1,9 @@
 # Shoping List app
 
+## Check
+
+Live Demo: https://andre0n.github.io/shopping-list/
+
 ## User Stories
 
 -   [ ] User can enter a new item \ TODO
