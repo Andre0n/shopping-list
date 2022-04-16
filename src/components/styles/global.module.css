@@ -1,0 +1,41 @@
+.bg_primary {
+    background: #2f3a4b;
+}
+.bg_secondary {
+    background-color: #865cd0;
+}
+.bg_succes {
+    background-color: #58ea8d;
+}
+.bg_danger {
+    background-color: #ef476f;
+}
+.rounded {
+    border-radius: 12px;
+}
+.rounded_full {
+    border-radius: 50%;
+}
+
+.white {
+    color: white;
+}
+
+.li {
+    list-style: none;
+}
+
+.flex_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+.flex_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
