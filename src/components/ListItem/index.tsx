@@ -5,7 +5,7 @@ import { ActionButton } from "../ActionButton";
 import GlobalStyle from "../styles/global.module.css";
 import ListItemStyle from "./ListItem.module.css";
 
-interface ListItem {
+interface Props {
     title: string;
     obs?: string;
     removeFunction: any;
@@ -15,7 +15,7 @@ export const ListItem = ({
     title,
     obs,
     removeFunction,
-}: ListItem): JSX.Element => {
+}: Props): JSX.Element => {
     const [checked, setChecked] = useState(false);
 
     const handleCheck = (): void => {
