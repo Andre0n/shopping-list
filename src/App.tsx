@@ -48,7 +48,11 @@ export const App = () => {
         <div className="App">
             <h1>Lista De Compras</h1>
             <List items={items} removeItem={removeItem} />
-            <Moddal show={shwModal} addItem={addItem} />
+            <Moddal
+                show={shwModal}
+                addItem={addItem}
+                hideModal={() => setShowModal(false)}
+            />
             <ActionButton
                 Icon={FaPlus}
                 accessibleName="Add new Item"
