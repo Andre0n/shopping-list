@@ -13,12 +13,7 @@ interface LItem {
 }
 
 export const List: React.FC = (): JSX.Element => {
-    const [items, setItems] = useState<LItem[]>(
-        new Array<LItem>(10).fill({
-            title: "Açucar",
-            obs: "dakdskdçskdaçsdkakdkasdkasçdkaçdkaçsd",
-        })
-    );
+    const [items, setItems] = useState<LItem[]>([]);
     const [shwModal, setShowModal] = useState<boolean>(false);
 
     const addItem = (title: string, obs: string): void => {
