@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ActionButtonStyle from "../ActionButton/ActionButton.module.css";
-import GlobalStyle from "../styles/global.module.css";
+import GlobalStyle from "../../styles/global.module.css";
 import ModalStyle from "./Modal.module.css";
 
 interface Props {

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaCheck, FaTrashAlt } from "react-icons/fa";
 import { ActionButton } from "../ActionButton";
 
-import GlobalStyle from "../styles/global.module.css";
+import GlobalStyle from "../../styles/global.module.css";
 import ListItemStyle from "./ListItem.module.css";
 
 interface Props {
@@ -36,11 +36,13 @@ export const ListItem = ({
             </div>
             <div className={`${GlobalStyle.flex_row} ${ListItemStyle.buttons}`}>
                 <ActionButton
+                    accessibleName="Mark Item"
                     Icon={FaCheck}
                     action={handleCheck}
                     customClasses={`${GlobalStyle.bg_secondary} ${GlobalStyle.white}`}
                 />
                 <ActionButton
+                    accessibleName="Remove Item"
                     Icon={FaTrashAlt}
                     action={removeFunction}
                     customClasses={`${GlobalStyle.bg_danger} ${GlobalStyle.white}`}
