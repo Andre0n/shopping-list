@@ -1,6 +1,6 @@
 .list_item {
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
     margin-top: 20px;
     padding: 15px 12px;
     flex-wrap: wrap;
@@ -13,6 +13,7 @@
 
 .list_item_info {
     margin: 5px 0px;
+    word-break: break-all;
 }
 .item_title {
     font-size: 1rem; /* 16px */
