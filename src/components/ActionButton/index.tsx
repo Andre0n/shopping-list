@@ -2,30 +2,26 @@ import { IconType } from "react-icons";
 import GlobalStyle from "../styles/global.module.css";
 import ActionButtonStyle from "./ActionButton.module.css";
 
-interface ActionButton {
-    text?: string;
+interface Props {
     Icon: IconType;
-    action: any;
+    action: Function;
     customClasses?: string;
+    text?: string;
 }
 export const ActionButton = ({
     Icon,
     action,
     customClasses,
     text,
-}: ActionButton): JSX.Element => {
+}: Props): JSX.Element => {
     const executeAction = (event: any) => {
         event.preventDefault();
         action();
     };
     return (
         <button
-            className={`
-                        ${ActionButtonStyle.button} 
-                        ${GlobalStyle.rounded} 
-                        ${GlobalStyle.flex_center} 
-                        ${customClasses}
-                    `}
+            className={`${ActionButtonStyle.button} ${GlobalStyle.rounded} 
+                        ${GlobalStyle.flex_center} ${customClasses}`}
             onClick={executeAction}
         >
             {text ? text : <Icon />}
