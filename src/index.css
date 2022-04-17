@@ -14,9 +14,11 @@ body {
     font-family: "Poppins", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #212835;
     color: #ffffff;
 }
 #root {
     width: 100%;
     height: 100%;
+    background-color: #212835;
 }
