@@ -1,5 +1,5 @@
 import { IconType } from "react-icons";
-import GlobalStyle from "../styles/global.module.css";
+import GlobalStyle from "../../styles/global.module.css";
 import ActionButtonStyle from "./ActionButton.module.css";
 
 interface Props {
@@ -7,12 +7,14 @@ interface Props {
     action: Function;
     customClasses?: string;
     text?: string;
+    accessibleName: string;
 }
 export const ActionButton = ({
     Icon,
     action,
     customClasses,
     text,
+    accessibleName,
 }: Props): JSX.Element => {
     const executeAction = (event: any) => {
         event.preventDefault();
@@ -23,6 +25,7 @@ export const ActionButton = ({
             className={`${ActionButtonStyle.button} ${GlobalStyle.rounded} 
                         ${GlobalStyle.flex_center} ${customClasses}`}
             onClick={executeAction}
+            aria-label={accessibleName}
         >
             {text ? text : <Icon />}
         </button>
