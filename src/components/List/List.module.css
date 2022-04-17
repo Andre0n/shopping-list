@@ -3,15 +3,6 @@
     position: relative;
 }
 
-.button_add {
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    right: 2rem;
-    bottom: 40px;
-    z-index: 10000;
-}
-
 @media screen and (min-width: 1024px) {
     .button_add {
         right: 4rem;
