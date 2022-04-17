@@ -5,7 +5,7 @@
     left: 50%;
     margin-top: -160px;
     margin-left: -160px;
-    background-color: white;
+    background-color: #d3d4d9;
     z-index: 10000;
     display: none;
     position: fixed;
@@ -17,17 +17,18 @@
 .show_up > form {
     height: 100%;
     padding: 1rem 2rem;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .show_up > form > input {
-    padding: 1rem 1rem;
+    width: 100%;
+    padding: 2rem 1rem;
     font-size: 1.25rem; /* 20px */
     line-height: 1.75rem; /* 28px */
     outline: none;
     border: none;
-    display: flex;
     margin-bottom: 20px;
     flex-direction: column;
     font-weight: 500;
@@ -37,18 +38,28 @@
     color: #cccccc;
 }
 
+@media screen and (max-width: 640px) {
+    .show_up > form > input {
+        width: 100%;
+        padding: 1rem 1rem;
+        font-size: 1.25rem; /* 20px */
+        line-height: 1.75rem; /* 28px */
+    }
+}
+
 @media screen and (min-width: 640px) {
     .modal {
-        height: 500px;
-        width: 500px;
-        margin-top: -250px;
-        margin-left: -250px;
+        height: 450px;
+        width: 450px;
+        padding: 1rem 1rem;
+        margin-top: -225px;
+        margin-left: -225px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .show_up > form > input {
-        padding: 0.8125rem 1rem;
+        padding: 1rem 1rem;
         font-size: 1rem;
         line-height: 1.5rem;
     }
