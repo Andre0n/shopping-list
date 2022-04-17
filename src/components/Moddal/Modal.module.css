@@ -1,0 +1,55 @@
+.modal {
+    height: 320px;
+    width: 320px;
+    top: 50%;
+    left: 50%;
+    margin-top: -160px;
+    margin-left: -160px;
+    background-color: white;
+    z-index: 10000;
+    display: none;
+    position: fixed;
+}
+
+.show_up {
+    display: block;
+}
+.show_up > form {
+    height: 100%;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.show_up > form > input {
+    padding: 1rem 1rem;
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+    outline: none;
+    border: none;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.show_up > form > input::placeholder {
+    color: #cccccc;
+}
+
+@media screen and (min-width: 640px) {
+    .modal {
+        height: 500px;
+        width: 500px;
+        margin-top: -250px;
+        margin-left: -250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .show_up > form > input {
+        padding: 0.8125rem 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
